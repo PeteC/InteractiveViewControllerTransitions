@@ -23,6 +23,12 @@
 		B5BA7351179BE2D400782CB9 /* DSLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */; };
 		B5BA7352179BE2D800782CB9 /* DSLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */; };
 		B5BA7355179BE37800782CB9 /* DSLThing.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7354179BE36000782CB9 /* DSLThing.m */; };
+		B5BA7358179BE5C100782CB9 /* DSLThingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7357179BE4B600782CB9 /* DSLThingCell.m */; };
+		B5BA735F179BE77500782CB9 /* thing01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BA735A179BE77500782CB9 /* thing01.jpg */; };
+		B5BA7360179BE77500782CB9 /* thing02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BA735B179BE77500782CB9 /* thing02.jpg */; };
+		B5BA7361179BE77500782CB9 /* thing03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BA735C179BE77500782CB9 /* thing03.jpg */; };
+		B5BA7362179BE77500782CB9 /* thing04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BA735D179BE77500782CB9 /* thing04.jpg */; };
+		B5BA7363179BE77500782CB9 /* thing05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BA735E179BE77500782CB9 /* thing05.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,13 @@
 		B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLSecondViewController.m; sourceTree = "<group>"; };
 		B5BA7353179BE36000782CB9 /* DSLThing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLThing.h; sourceTree = "<group>"; };
 		B5BA7354179BE36000782CB9 /* DSLThing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLThing.m; sourceTree = "<group>"; };
+		B5BA7356179BE4B600782CB9 /* DSLThingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLThingCell.h; sourceTree = "<group>"; };
+		B5BA7357179BE4B600782CB9 /* DSLThingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLThingCell.m; sourceTree = "<group>"; };
+		B5BA735A179BE77500782CB9 /* thing01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing01.jpg; sourceTree = "<group>"; };
+		B5BA735B179BE77500782CB9 /* thing02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing02.jpg; sourceTree = "<group>"; };
+		B5BA735C179BE77500782CB9 /* thing03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing03.jpg; sourceTree = "<group>"; };
+		B5BA735D179BE77500782CB9 /* thing04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing04.jpg; sourceTree = "<group>"; };
+		B5BA735E179BE77500782CB9 /* thing05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing05.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +133,6 @@
 			children = (
 				B5BA7325179BE1E400782CB9 /* DSLAppDelegate.h */,
 				B5BA7326179BE1E400782CB9 /* DSLAppDelegate.m */,
-				B5BA7328179BE1E400782CB9 /* Main.storyboard */,
-				B5BA732E179BE1E400782CB9 /* Images.xcassets */,
 				B5BA731D179BE1E400782CB9 /* Supporting Files */,
 				B5BA734D179BE22F00782CB9 /* DSLFirstViewController.h */,
 				B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */,
@@ -129,6 +140,11 @@
 				B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */,
 				B5BA7353179BE36000782CB9 /* DSLThing.h */,
 				B5BA7354179BE36000782CB9 /* DSLThing.m */,
+				B5BA7356179BE4B600782CB9 /* DSLThingCell.h */,
+				B5BA7357179BE4B600782CB9 /* DSLThingCell.m */,
+				B5BA7328179BE1E400782CB9 /* Main.storyboard */,
+				B5BA732E179BE1E400782CB9 /* Images.xcassets */,
+				B5BA7359179BE77500782CB9 /* Thing images */,
 			);
 			path = TransitionExample;
 			sourceTree = "<group>";
@@ -160,6 +176,18 @@
 				B5BA733E179BE1E400782CB9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5BA7359179BE77500782CB9 /* Thing images */ = {
+			isa = PBXGroup;
+			children = (
+				B5BA735A179BE77500782CB9 /* thing01.jpg */,
+				B5BA735B179BE77500782CB9 /* thing02.jpg */,
+				B5BA735C179BE77500782CB9 /* thing03.jpg */,
+				B5BA735D179BE77500782CB9 /* thing04.jpg */,
+				B5BA735E179BE77500782CB9 /* thing05.jpg */,
+			);
+			path = "Thing images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +268,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5BA732F179BE1E400782CB9 /* Images.xcassets in Resources */,
+				B5BA7363179BE77500782CB9 /* thing05.jpg in Resources */,
+				B5BA735F179BE77500782CB9 /* thing01.jpg in Resources */,
+				B5BA7362179BE77500782CB9 /* thing04.jpg in Resources */,
+				B5BA7360179BE77500782CB9 /* thing02.jpg in Resources */,
 				B5BA7321179BE1E400782CB9 /* InfoPlist.strings in Resources */,
 				B5BA732A179BE1E400782CB9 /* Main.storyboard in Resources */,
+				B5BA7361179BE77500782CB9 /* thing03.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +297,7 @@
 				B5BA7327179BE1E400782CB9 /* DSLAppDelegate.m in Sources */,
 				B5BA7352179BE2D800782CB9 /* DSLSecondViewController.m in Sources */,
 				B5BA7355179BE37800782CB9 /* DSLThing.m in Sources */,
+				B5BA7358179BE5C100782CB9 /* DSLThingCell.m in Sources */,
 				B5BA7323179BE1E400782CB9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
