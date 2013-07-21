@@ -1,5 +1,5 @@
 //
-//  DSLViewController.h
+//  DSLFirstViewController.h
 //  TransitionExample
 //
 //  Created by Pete Callaway on 21/07/2013.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DSLViewController : UIViewController
+@interface DSLFirstViewController : UICollectionViewController
 
 @end

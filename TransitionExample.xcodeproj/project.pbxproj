@@ -14,13 +14,14 @@
 		B5BA7323179BE1E400782CB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7322179BE1E400782CB9 /* main.m */; };
 		B5BA7327179BE1E400782CB9 /* DSLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7326179BE1E400782CB9 /* DSLAppDelegate.m */; };
 		B5BA732A179BE1E400782CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BA7328179BE1E400782CB9 /* Main.storyboard */; };
-		B5BA732D179BE1E400782CB9 /* DSLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA732C179BE1E400782CB9 /* DSLViewController.m */; };
 		B5BA732F179BE1E400782CB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BA732E179BE1E400782CB9 /* Images.xcassets */; };
 		B5BA7336179BE1E400782CB9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA7335179BE1E400782CB9 /* XCTest.framework */; };
 		B5BA7337179BE1E400782CB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA7316179BE1E400782CB9 /* Foundation.framework */; };
 		B5BA7338179BE1E400782CB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA731A179BE1E400782CB9 /* UIKit.framework */; };
 		B5BA7340179BE1E400782CB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5BA733E179BE1E400782CB9 /* InfoPlist.strings */; };
 		B5BA7342179BE1E400782CB9 /* TransitionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7341179BE1E400782CB9 /* TransitionExampleTests.m */; };
+		B5BA7351179BE2D400782CB9 /* DSLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */; };
+		B5BA7352179BE2D800782CB9 /* DSLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		B5BA7325179BE1E400782CB9 /* DSLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLAppDelegate.h; sourceTree = "<group>"; };
 		B5BA7326179BE1E400782CB9 /* DSLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLAppDelegate.m; sourceTree = "<group>"; };
 		B5BA7329179BE1E400782CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5BA732B179BE1E400782CB9 /* DSLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLViewController.h; sourceTree = "<group>"; };
-		B5BA732C179BE1E400782CB9 /* DSLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLViewController.m; sourceTree = "<group>"; };
 		B5BA732E179BE1E400782CB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5BA7334179BE1E400782CB9 /* TransitionExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BA7335179BE1E400782CB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B5BA733D179BE1E400782CB9 /* TransitionExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransitionExampleTests-Info.plist"; sourceTree = "<group>"; };
 		B5BA733F179BE1E400782CB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5BA7341179BE1E400782CB9 /* TransitionExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionExampleTests.m; sourceTree = "<group>"; };
+		B5BA734D179BE22F00782CB9 /* DSLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLFirstViewController.h; sourceTree = "<group>"; };
+		B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLFirstViewController.m; sourceTree = "<group>"; };
+		B5BA734F179BE24000782CB9 /* DSLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLSecondViewController.h; sourceTree = "<group>"; };
+		B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +118,12 @@
 				B5BA7325179BE1E400782CB9 /* DSLAppDelegate.h */,
 				B5BA7326179BE1E400782CB9 /* DSLAppDelegate.m */,
 				B5BA7328179BE1E400782CB9 /* Main.storyboard */,
-				B5BA732B179BE1E400782CB9 /* DSLViewController.h */,
-				B5BA732C179BE1E400782CB9 /* DSLViewController.m */,
 				B5BA732E179BE1E400782CB9 /* Images.xcassets */,
 				B5BA731D179BE1E400782CB9 /* Supporting Files */,
+				B5BA734D179BE22F00782CB9 /* DSLFirstViewController.h */,
+				B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */,
+				B5BA734F179BE24000782CB9 /* DSLSecondViewController.h */,
+				B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */,
 			);
 			path = TransitionExample;
 			sourceTree = "<group>";
@@ -250,8 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BA732D179BE1E400782CB9 /* DSLViewController.m in Sources */,
+				B5BA7351179BE2D400782CB9 /* DSLFirstViewController.m in Sources */,
 				B5BA7327179BE1E400782CB9 /* DSLAppDelegate.m in Sources */,
+				B5BA7352179BE2D800782CB9 /* DSLSecondViewController.m in Sources */,
 				B5BA7323179BE1E400782CB9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
