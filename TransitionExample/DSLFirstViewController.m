@@ -11,8 +11,9 @@
 #import "DSLThing.h"
 #import "DSLThingCell.h"
 #import "DSLSecondViewController.h"
+#import "DSLTransitionFromFirstToSecond.h"
 
-@interface DSLFirstViewController ()
+@interface DSLFirstViewController ()<UINavigationControllerDelegate>
 
 @property (nonatomic, strong) NSArray *things;
 
@@ -37,15 +38,48 @@
 
 #pragma mark UIViewController methods
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    // Set outself as the navigation controller's delegate so we're asked for a transitioning object
+    self.navigationController.delegate = self;
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+
+    // Stop being the navigation controller's delegate
+    if (self.navigationController.delegate == self) {
+        self.navigationController.delegate = nil;
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController isKindOfClass:[DSLSecondViewController class]]) {
         // Get the selected item index path
         NSIndexPath *selectedIndexPath = [[self.collectionView indexPathsForSelectedItems] firstObject];
+
+        // Set the thing on the view controller we're about to show
         if (selectedIndexPath != nil) {
-            // Set the thing on the view controller we're about to show
             DSLSecondViewController *secondViewController = segue.destinationViewController;
             secondViewController.thing = self.things[selectedIndexPath.row];
         }
+    }
+}
+
+
+#pragma mark UINavigationControllerDelegate methods
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+                                               fromViewController:(UIViewController *)fromVC
+                                                 toViewController:(UIViewController *)toVC {
+    // Check if we're transitioning from this view controller to a DSLSecondViewController
+    if (fromVC == self && [toVC isKindOfClass:[DSLSecondViewController class]]) {
+        return [[DSLTransitionFromFirstToSecond alloc] init];
+    }
+    else {
+        return nil;
     }
 }
 
