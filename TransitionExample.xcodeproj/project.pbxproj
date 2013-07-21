@@ -513,6 +513,7 @@
 				B5BA7347179BE1E400782CB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5BA7348179BE1E400782CB9 /* Build configuration list for PBXNativeTarget "TransitionExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +522,7 @@
 				B5BA734A179BE1E400782CB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
