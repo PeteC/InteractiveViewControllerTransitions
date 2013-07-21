@@ -104,4 +104,16 @@
     return cell;
 }
 
+
+#pragma mark
+
+- (DSLThingCell*)collectionViewCellForThing:(DSLThing*)thing {
+    NSUInteger thingIndex = [self.things indexOfObject:thing];
+    if (thingIndex == NSNotFound) {
+        return nil;
+    }
+
+    return (DSLThingCell*)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:thingIndex inSection:0]];
+}
+
 @end
