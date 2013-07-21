@@ -6,8 +6,11 @@
 //  Copyright (c) 2013 Dative Studios. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@class DSLThing;
+
 
 @interface DSLSecondViewController : UIViewController
+
+@property (nonatomic, strong) DSLThing *thing;
 
 @end

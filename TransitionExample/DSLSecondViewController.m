@@ -8,12 +8,24 @@
 
 #import "DSLSecondViewController.h"
 
+#import "DSLThing.h"
+
+
 @interface DSLSecondViewController ()
+
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
 
 @end
 
 
 @implementation DSLSecondViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.titleLabel.text = self.thing.title;
+    self.imageView.image = self.thing.image;
+}
 
 @end

@@ -10,6 +10,7 @@
 
 #import "DSLThing.h"
 #import "DSLThingCell.h"
+#import "DSLSecondViewController.h"
 
 @interface DSLFirstViewController ()
 
@@ -31,6 +32,21 @@
     }
 
     return self;
+}
+
+
+#pragma mark UIViewController methods
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController isKindOfClass:[DSLSecondViewController class]]) {
+        // Get the selected item index path
+        NSIndexPath *selectedIndexPath = [[self.collectionView indexPathsForSelectedItems] firstObject];
+        if (selectedIndexPath != nil) {
+            // Set the thing on the view controller we're about to show
+            DSLSecondViewController *secondViewController = segue.destinationViewController;
+            secondViewController.thing = self.things[selectedIndexPath.row];
+        }
+    }
 }
 
 
