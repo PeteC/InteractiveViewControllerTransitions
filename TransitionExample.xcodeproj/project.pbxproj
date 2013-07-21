@@ -22,6 +22,7 @@
 		B5BA7342179BE1E400782CB9 /* TransitionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7341179BE1E400782CB9 /* TransitionExampleTests.m */; };
 		B5BA7351179BE2D400782CB9 /* DSLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */; };
 		B5BA7352179BE2D800782CB9 /* DSLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */; };
+		B5BA7355179BE37800782CB9 /* DSLThing.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7354179BE36000782CB9 /* DSLThing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLFirstViewController.m; sourceTree = "<group>"; };
 		B5BA734F179BE24000782CB9 /* DSLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLSecondViewController.h; sourceTree = "<group>"; };
 		B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLSecondViewController.m; sourceTree = "<group>"; };
+		B5BA7353179BE36000782CB9 /* DSLThing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLThing.h; sourceTree = "<group>"; };
+		B5BA7354179BE36000782CB9 /* DSLThing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLThing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */,
 				B5BA734F179BE24000782CB9 /* DSLSecondViewController.h */,
 				B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */,
+				B5BA7353179BE36000782CB9 /* DSLThing.h */,
+				B5BA7354179BE36000782CB9 /* DSLThing.m */,
 			);
 			path = TransitionExample;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				B5BA7351179BE2D400782CB9 /* DSLFirstViewController.m in Sources */,
 				B5BA7327179BE1E400782CB9 /* DSLAppDelegate.m in Sources */,
 				B5BA7352179BE2D800782CB9 /* DSLSecondViewController.m in Sources */,
+				B5BA7355179BE37800782CB9 /* DSLThing.m in Sources */,
 				B5BA7323179BE1E400782CB9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
