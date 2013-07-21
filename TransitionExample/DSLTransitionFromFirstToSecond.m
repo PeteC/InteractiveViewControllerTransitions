@@ -26,7 +26,7 @@
     DSLThingCell *cell = (DSLThingCell*)[fromViewController.collectionView cellForItemAtIndexPath:[[fromViewController.collectionView indexPathsForSelectedItems] firstObject]];
     UIView *cellImageSnapshot = [cell.imageView snapshotView];
     cellImageSnapshot.frame = [containerView convertRect:cell.imageView.frame fromView:cell.imageView.superview];
-    cell.hidden = YES;
+    cell.imageView.hidden = YES;
 
     // Setup the initial view states
     toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
