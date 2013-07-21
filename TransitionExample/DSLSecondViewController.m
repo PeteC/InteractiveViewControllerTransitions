@@ -16,6 +16,7 @@
 @interface DSLSecondViewController ()<UINavigationControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransition;
 
 @end
 
@@ -46,6 +47,10 @@
 
     self.titleLabel.text = self.thing.title;
     self.imageView.image = self.thing.image;
+
+    UIScreenEdgePanGestureRecognizer *popRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePopRecognizer:)];
+    popRecognizer.edges = UIRectEdgeLeft;
+    [self.view addGestureRecognizer:popRecognizer];
 }
 
 
@@ -62,6 +67,47 @@
     else {
         return nil;
     }
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                         interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
+    // Check if this is for our custom transition
+    if ([animationController isKindOfClass:[DSLTransitionFromSecondToFirst class]]) {
+        return self.interactivePopTransition;
+    }
+    else {
+        return nil;
+    }
+}
+
+
+#pragma mark UIGestureRecognizer handlers
+
+- (void)handlePopRecognizer:(UIScreenEdgePanGestureRecognizer*)recognizer {
+    CGFloat progress = [recognizer translationInView:self.view].x / (self.view.bounds.size.width * 1.0);
+    progress = MIN(1.0, MAX(0.0, progress));
+
+    if (recognizer.state == UIGestureRecognizerStateBegan) {
+        // Create a interactive transition and pop the view controller
+        self.interactivePopTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else if (recognizer.state == UIGestureRecognizerStateChanged) {
+        // Update the interactive transition's progress
+        [self.interactivePopTransition updateInteractiveTransition:progress];
+    }
+    else if (recognizer.state == UIGestureRecognizerStateEnded || recognizer.state == UIGestureRecognizerStateCancelled) {
+        // Finish or cancel the interactive transition
+        if (progress > 0.5) {
+            [self.interactivePopTransition finishInteractiveTransition];
+        }
+        else {
+            [self.interactivePopTransition cancelInteractiveTransition];
+        }
+
+        self.interactivePopTransition = nil;
+    }
+
 }
 
 @end
