@@ -15,7 +15,7 @@
 
 @interface DSLSecondViewController ()<UINavigationControllerDelegate>
 
-@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *overviewLabel;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransition;
 
 @end
@@ -45,7 +45,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.titleLabel.text = self.thing.title;
+    self.title = self.thing.title;
+    self.overviewLabel.text = self.thing.overview;
     self.imageView.image = self.thing.image;
 
     UIScreenEdgePanGestureRecognizer *popRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePopRecognizer:)];

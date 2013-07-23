@@ -11,7 +11,10 @@
 
 @property (nonatomic, copy, readonly) NSString *title;
 @property (nonatomic, strong) UIImage *image;
+@property (nonatomic, copy, readonly) NSString *overview;
 
-- (instancetype)initWithTitle:(NSString*)title image:(UIImage*)image;
++ (NSArray*)exampleThings;
+
+- (instancetype)initWithTitle:(NSString*)title image:(UIImage*)image overview:(NSString*)overview;
 
 @end

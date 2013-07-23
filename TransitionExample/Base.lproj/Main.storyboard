@@ -86,35 +86,33 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b0o-BK-8Kz">
-                                <rect key="frame" x="60" y="154" width="200" height="200"/>
+                                <rect key="frame" x="60" y="104" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Aba-aM-aS5"/>
-                                    <constraint firstAttribute="width" constant="200" id="gFI-FQ-LbP"/>
+                                    <constraint firstAttribute="height" constant="200" id="zwD-Bc-vye"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="Htz-6c-3OX">
-                                <rect key="frame" x="60" y="362" width="200" height="20"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="Htz-6c-3OX" userLabel="Detail label">
+                                <rect key="frame" x="60" y="312" width="200" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Khp-yz-YXU"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline1"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="b0o-BK-8Kz" secondAttribute="centerY" constant="30" id="Kaq-6X-b5i"/>
-                            <constraint firstAttribute="centerX" secondItem="Htz-6c-3OX" secondAttribute="centerX" id="iGV-k9-8fC"/>
-                            <constraint firstAttribute="centerX" secondItem="b0o-BK-8Kz" secondAttribute="centerX" id="wrU-E0-rdK"/>
-                            <constraint firstItem="Htz-6c-3OX" firstAttribute="top" secondItem="b0o-BK-8Kz" secondAttribute="bottom" constant="8" id="xkl-nb-Vo4"/>
+                            <constraint firstItem="Htz-6c-3OX" firstAttribute="leading" secondItem="w5A-z5-QZM" secondAttribute="leading" constant="60" id="1b4-Wm-kkl"/>
+                            <constraint firstItem="b0o-BK-8Kz" firstAttribute="leading" secondItem="w5A-z5-QZM" secondAttribute="leading" constant="60" id="6Ql-vB-LfH"/>
+                            <constraint firstItem="Htz-6c-3OX" firstAttribute="top" secondItem="b0o-BK-8Kz" secondAttribute="bottom" constant="8" id="Ajg-3m-97e"/>
+                            <constraint firstItem="b0o-BK-8Kz" firstAttribute="top" secondItem="Scx-uv-aNt" secondAttribute="bottom" constant="40" id="Qsf-fo-DIU"/>
+                            <constraint firstAttribute="trailing" secondItem="Htz-6c-3OX" secondAttribute="trailing" constant="60" id="Zvd-Ty-ZCr"/>
+                            <constraint firstAttribute="trailing" secondItem="b0o-BK-8Kz" secondAttribute="trailing" constant="60" id="pwM-qb-NTD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MpS-zR-hMq"/>
                     <connections>
                         <outlet property="imageView" destination="b0o-BK-8Kz" id="Snn-08-NhP"/>
-                        <outlet property="titleLabel" destination="Htz-6c-3OX" id="fYs-Iz-mtg"/>
+                        <outlet property="overviewLabel" destination="Htz-6c-3OX" id="eLP-II-NT5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kul-aQ-1qp" userLabel="First Responder" sceneMemberID="firstResponder"/>

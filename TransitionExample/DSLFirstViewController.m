@@ -25,11 +25,8 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self != nil) {
-        _things = @[[[DSLThing alloc] initWithTitle:@"Thing 1" image:[UIImage imageNamed:@"thing01.jpg"]],
-                    [[DSLThing alloc] initWithTitle:@"Thing 2" image:[UIImage imageNamed:@"thing02.jpg"]],
-                    [[DSLThing alloc] initWithTitle:@"Thing 3" image:[UIImage imageNamed:@"thing03.jpg"]],
-                    [[DSLThing alloc] initWithTitle:@"Thing 4" image:[UIImage imageNamed:@"thing04.jpg"]],
-                    [[DSLThing alloc] initWithTitle:@"Thing 5" image:[UIImage imageNamed:@"thing05.jpg"]]];
+        _things = [DSLThing exampleThings];
+        self.title = @"Things";
     }
 
     return self;
