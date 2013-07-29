@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jN3-VK-93E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jN3-VK-93E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -89,7 +89,8 @@
                                 <rect key="frame" x="60" y="104" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="zwD-Bc-vye"/>
+                                    <constraint firstAttribute="height" constant="200" id="OMx-yr-0Ug"/>
+                                    <constraint firstAttribute="width" constant="200" id="ZHR-Ig-GZb"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="Htz-6c-3OX" userLabel="Detail label">
@@ -101,12 +102,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Htz-6c-3OX" firstAttribute="leading" secondItem="w5A-z5-QZM" secondAttribute="leading" constant="60" id="1b4-Wm-kkl"/>
-                            <constraint firstItem="b0o-BK-8Kz" firstAttribute="leading" secondItem="w5A-z5-QZM" secondAttribute="leading" constant="60" id="6Ql-vB-LfH"/>
-                            <constraint firstItem="Htz-6c-3OX" firstAttribute="top" secondItem="b0o-BK-8Kz" secondAttribute="bottom" constant="8" id="Ajg-3m-97e"/>
-                            <constraint firstItem="b0o-BK-8Kz" firstAttribute="top" secondItem="Scx-uv-aNt" secondAttribute="bottom" constant="40" id="Qsf-fo-DIU"/>
-                            <constraint firstAttribute="trailing" secondItem="Htz-6c-3OX" secondAttribute="trailing" constant="60" id="Zvd-Ty-ZCr"/>
-                            <constraint firstAttribute="trailing" secondItem="b0o-BK-8Kz" secondAttribute="trailing" constant="60" id="pwM-qb-NTD"/>
+                            <constraint firstAttribute="trailing" secondItem="Htz-6c-3OX" secondAttribute="trailing" constant="60" id="9AD-00-KKX"/>
+                            <constraint firstItem="b0o-BK-8Kz" firstAttribute="top" secondItem="w5A-z5-QZM" secondAttribute="top" constant="104" id="UwJ-Db-sSc"/>
+                            <constraint firstItem="b0o-BK-8Kz" firstAttribute="leading" secondItem="w5A-z5-QZM" secondAttribute="leading" constant="60" id="Vh1-k0-3RS"/>
+                            <constraint firstItem="Htz-6c-3OX" firstAttribute="leading" secondItem="w5A-z5-QZM" secondAttribute="leading" constant="60" id="Xqh-QD-u2j"/>
+                            <constraint firstItem="Htz-6c-3OX" firstAttribute="top" secondItem="b0o-BK-8Kz" secondAttribute="bottom" constant="8" id="j6g-8q-zBc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MpS-zR-hMq"/>
