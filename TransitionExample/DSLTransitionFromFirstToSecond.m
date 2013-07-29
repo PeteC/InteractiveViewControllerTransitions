@@ -24,7 +24,7 @@
 
     // Get a snapshot of the thing cell we're transitioning from
     DSLThingCell *cell = (DSLThingCell*)[fromViewController.collectionView cellForItemAtIndexPath:[[fromViewController.collectionView indexPathsForSelectedItems] firstObject]];
-    UIView *cellImageSnapshot = [cell.imageView snapshotView];
+    UIView *cellImageSnapshot = [cell.imageView snapshotViewAfterScreenUpdates:NO];
     cellImageSnapshot.frame = [containerView convertRect:cell.imageView.frame fromView:cell.imageView.superview];
     cell.imageView.hidden = YES;
 

@@ -22,7 +22,7 @@
     NSTimeInterval duration = [self transitionDuration:transitionContext];
 
     // Get a snapshot of the image view
-    UIView *imageSnapshot = [fromViewController.imageView snapshotView];
+    UIView *imageSnapshot = [fromViewController.imageView snapshotViewAfterScreenUpdates:NO];
     imageSnapshot.frame = [containerView convertRect:fromViewController.imageView.frame fromView:fromViewController.imageView.superview];
     fromViewController.imageView.hidden = YES;
 
