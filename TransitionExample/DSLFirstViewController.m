@@ -42,8 +42,8 @@
     self.navigationController.delegate = self;
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
 
     // Stop being the navigation controller's delegate
     if (self.navigationController.delegate == self) {
