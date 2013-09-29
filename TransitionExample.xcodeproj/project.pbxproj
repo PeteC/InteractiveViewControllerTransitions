@@ -15,11 +15,6 @@
 		B5BA7327179BE1E400782CB9 /* DSLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7326179BE1E400782CB9 /* DSLAppDelegate.m */; };
 		B5BA732A179BE1E400782CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BA7328179BE1E400782CB9 /* Main.storyboard */; };
 		B5BA732F179BE1E400782CB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BA732E179BE1E400782CB9 /* Images.xcassets */; };
-		B5BA7336179BE1E400782CB9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA7335179BE1E400782CB9 /* XCTest.framework */; };
-		B5BA7337179BE1E400782CB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA7316179BE1E400782CB9 /* Foundation.framework */; };
-		B5BA7338179BE1E400782CB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA731A179BE1E400782CB9 /* UIKit.framework */; };
-		B5BA7340179BE1E400782CB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5BA733E179BE1E400782CB9 /* InfoPlist.strings */; };
-		B5BA7342179BE1E400782CB9 /* TransitionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7341179BE1E400782CB9 /* TransitionExampleTests.m */; };
 		B5BA7351179BE2D400782CB9 /* DSLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */; };
 		B5BA7352179BE2D800782CB9 /* DSLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */; };
 		B5BA7355179BE37800782CB9 /* DSLThing.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7354179BE36000782CB9 /* DSLThing.m */; };
@@ -32,16 +27,6 @@
 		B5BA7366179BEA9400782CB9 /* DSLTransitionFromFirstToSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7365179BEA7300782CB9 /* DSLTransitionFromFirstToSecond.m */; };
 		B5BA7369179BED8900782CB9 /* DSLTransitionFromSecondToFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7368179BED8900782CB9 /* DSLTransitionFromSecondToFirst.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B5BA7339179BE1E400782CB9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5BA730B179BE1E400782CB9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5BA7312179BE1E400782CB9;
-			remoteInfo = TransitionExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B5BA7313179BE1E400782CB9 /* TransitionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,11 +41,7 @@
 		B5BA7326179BE1E400782CB9 /* DSLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLAppDelegate.m; sourceTree = "<group>"; };
 		B5BA7329179BE1E400782CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5BA732E179BE1E400782CB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B5BA7334179BE1E400782CB9 /* TransitionExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BA7335179BE1E400782CB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B5BA733D179BE1E400782CB9 /* TransitionExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransitionExampleTests-Info.plist"; sourceTree = "<group>"; };
-		B5BA733F179BE1E400782CB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B5BA7341179BE1E400782CB9 /* TransitionExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionExampleTests.m; sourceTree = "<group>"; };
 		B5BA734D179BE22F00782CB9 /* DSLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLFirstViewController.h; sourceTree = "<group>"; };
 		B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLFirstViewController.m; sourceTree = "<group>"; };
 		B5BA734F179BE24000782CB9 /* DSLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLSecondViewController.h; sourceTree = "<group>"; };
@@ -91,16 +72,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5BA7331179BE1E400782CB9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5BA7336179BE1E400782CB9 /* XCTest.framework in Frameworks */,
-				B5BA7338179BE1E400782CB9 /* UIKit.framework in Frameworks */,
-				B5BA7337179BE1E400782CB9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				B5BA731C179BE1E400782CB9 /* TransitionExample */,
-				B5BA733B179BE1E400782CB9 /* TransitionExampleTests */,
 				B5BA7315179BE1E400782CB9 /* Frameworks */,
 				B5BA7314179BE1E400782CB9 /* Products */,
 			);
@@ -118,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				B5BA7313179BE1E400782CB9 /* TransitionExample.app */,
-				B5BA7334179BE1E400782CB9 /* TransitionExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,24 +139,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B5BA733B179BE1E400782CB9 /* TransitionExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				B5BA7341179BE1E400782CB9 /* TransitionExampleTests.m */,
-				B5BA733C179BE1E400782CB9 /* Supporting Files */,
-			);
-			path = TransitionExampleTests;
-			sourceTree = "<group>";
-		};
-		B5BA733C179BE1E400782CB9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5BA733D179BE1E400782CB9 /* TransitionExampleTests-Info.plist */,
-				B5BA733E179BE1E400782CB9 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		B5BA7359179BE77500782CB9 /* Thing images */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,24 +171,6 @@
 			productReference = B5BA7313179BE1E400782CB9 /* TransitionExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5BA7333179BE1E400782CB9 /* TransitionExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5BA7348179BE1E400782CB9 /* Build configuration list for PBXNativeTarget "TransitionExampleTests" */;
-			buildPhases = (
-				B5BA7330179BE1E400782CB9 /* Sources */,
-				B5BA7331179BE1E400782CB9 /* Frameworks */,
-				B5BA7332179BE1E400782CB9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5BA733A179BE1E400782CB9 /* PBXTargetDependency */,
-			);
-			name = TransitionExampleTests;
-			productName = TransitionExampleTests;
-			productReference = B5BA7334179BE1E400782CB9 /* TransitionExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,11 +180,6 @@
 				CLASSPREFIX = DSL;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Dative Studios";
-				TargetAttributes = {
-					B5BA7333179BE1E400782CB9 = {
-						TestTargetID = B5BA7312179BE1E400782CB9;
-					};
-				};
 			};
 			buildConfigurationList = B5BA730E179BE1E400782CB9 /* Build configuration list for PBXProject "TransitionExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -267,7 +195,6 @@
 			projectRoot = "";
 			targets = (
 				B5BA7312179BE1E400782CB9 /* TransitionExample */,
-				B5BA7333179BE1E400782CB9 /* TransitionExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,14 +212,6 @@
 				B5BA7321179BE1E400782CB9 /* InfoPlist.strings in Resources */,
 				B5BA732A179BE1E400782CB9 /* Main.storyboard in Resources */,
 				B5BA7361179BE77500782CB9 /* thing03.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5BA7332179BE1E400782CB9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5BA7340179BE1E400782CB9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,23 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5BA7330179BE1E400782CB9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5BA7342179BE1E400782CB9 /* TransitionExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B5BA733A179BE1E400782CB9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B5BA7312179BE1E400782CB9 /* TransitionExample */;
-			targetProxy = B5BA7339179BE1E400782CB9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B5BA731F179BE1E400782CB9 /* InfoPlist.strings */ = {
@@ -347,14 +250,6 @@
 				B5BA7329179BE1E400782CB9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B5BA733E179BE1E400782CB9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5BA733F179BE1E400782CB9 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -454,46 +349,6 @@
 			};
 			name = Release;
 		};
-		B5BA7349179BE1E400782CB9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransitionExample.app/TransitionExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TransitionExample/TransitionExample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TransitionExampleTests/TransitionExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		B5BA734A179BE1E400782CB9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransitionExample.app/TransitionExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TransitionExample/TransitionExample-Prefix.pch";
-				INFOPLIST_FILE = "TransitionExampleTests/TransitionExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -511,15 +366,6 @@
 			buildConfigurations = (
 				B5BA7346179BE1E400782CB9 /* Debug */,
 				B5BA7347179BE1E400782CB9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B5BA7348179BE1E400782CB9 /* Build configuration list for PBXNativeTarget "TransitionExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5BA7349179BE1E400782CB9 /* Debug */,
-				B5BA734A179BE1E400782CB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
