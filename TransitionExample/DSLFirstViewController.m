@@ -11,11 +11,11 @@
 #import "DSLThing.h"
 #import "DSLThingCell.h"
 #import "DSLSecondViewController.h"
-#import "DSLTransitionFromFirstToSecond.h"
 
 @interface DSLFirstViewController ()<UINavigationControllerDelegate>
 
 @property (nonatomic, strong) NSArray *things;
+@property (nonatomic, strong) UIView *viewToTransfer;
 
 @end
 
@@ -72,8 +72,8 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC {
     // Check if we're transitioning from this view controller to a DSLSecondViewController
-    if (fromVC == self && [toVC isKindOfClass:[DSLSecondViewController class]]) {
-        return [[DSLTransitionFromFirstToSecond alloc] init];
+    if (fromVC == self && [toVC conformsToProtocol:@protocol(DSLTransitionDataSource)]) {
+        return [[DSLTransition alloc] init];
     }
     else {
         return nil;
@@ -82,10 +82,6 @@
 
 
 #pragma mark UICollectionViewControllerDataSource methods
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.things.count;
@@ -102,15 +98,18 @@
 }
 
 
-#pragma mark
+#pragma mark DSLTransitionDataSource
 
-- (DSLThingCell*)collectionViewCellForThing:(DSLThing*)thing {
-    NSUInteger thingIndex = [self.things indexOfObject:thing];
-    if (thingIndex == NSNotFound) {
-        return nil;
+- (UIView *)viewToTransfer {
+    // Return imageView from cell of selected path if possible
+    // Otherwise return last one used
+    NSArray *selectedPaths = self.collectionView.indexPathsForSelectedItems;
+    if (selectedPaths.count > 0) {
+        NSIndexPath *selectedIndexPath = selectedPaths.firstObject;
+        DSLThingCell *cell = (DSLThingCell *)[self.collectionView cellForItemAtIndexPath:selectedIndexPath];
+        _viewToTransfer = cell.imageView;
     }
-
-    return (DSLThingCell*)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:thingIndex inSection:0]];
+    return _viewToTransfer;
 }
 
 @end

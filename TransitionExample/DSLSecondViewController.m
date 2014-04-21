@@ -10,11 +10,11 @@
 
 #import "DSLFirstViewController.h"
 #import "DSLThing.h"
-#import "DSLTransitionFromSecondToFirst.h"
 
 
 @interface DSLSecondViewController ()<UINavigationControllerDelegate>
 
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @property (nonatomic, weak) IBOutlet UILabel *overviewLabel;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransition;
 
@@ -62,8 +62,8 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC {
     // Check if we're transitioning from this view controller to a DSLFirstViewController
-    if (fromVC == self && [toVC isKindOfClass:[DSLFirstViewController class]]) {
-        return [[DSLTransitionFromSecondToFirst alloc] init];
+    if (fromVC == self && [toVC conformsToProtocol:@protocol(DSLTransitionDataSource)]) {
+        return [[DSLTransition alloc] init];
     }
     else {
         return nil;
@@ -73,7 +73,7 @@
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                          interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
     // Check if this is for our custom transition
-    if ([animationController isKindOfClass:[DSLTransitionFromSecondToFirst class]]) {
+    if ([animationController isKindOfClass:[DSLTransition class]]) {
         return self.interactivePopTransition;
     }
     else {
@@ -108,7 +108,13 @@
 
         self.interactivePopTransition = nil;
     }
+}
 
+
+#pragma mark DSLTransitionDataSource
+
+- (UIView *)viewToTransfer {
+    return self.imageView;
 }
 
 @end
