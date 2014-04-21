@@ -62,7 +62,7 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC {
     // Check if we're transitioning from this view controller to a DSLFirstViewController
-    if (fromVC == self && [toVC isKindOfClass:[DSLFirstViewController class]]) {
+    if (fromVC == self && [toVC conformsToProtocol:@protocol(DSLTransitionDataSource)]) {
         return [[DSLTransition alloc] init];
     }
     else {

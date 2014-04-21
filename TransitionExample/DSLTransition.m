@@ -14,6 +14,12 @@
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
+    if (![fromViewController conformsToProtocol:@protocol(DSLTransitionDataSource)] ||
+        ![toViewController conformsToProtocol:@protocol(DSLTransitionDataSource)]) {
+        // Both to/from view controllers must conform to the DSLTransitionDataSource protocol
+        return;
+    }
+    
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     
     // Get a snapshot of the view to transfer
