@@ -24,8 +24,7 @@
 		B5BA7361179BE77500782CB9 /* thing03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BA735C179BE77500782CB9 /* thing03.jpg */; };
 		B5BA7362179BE77500782CB9 /* thing04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BA735D179BE77500782CB9 /* thing04.jpg */; };
 		B5BA7363179BE77500782CB9 /* thing05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5BA735E179BE77500782CB9 /* thing05.jpg */; };
-		B5BA7366179BEA9400782CB9 /* DSLTransitionFromFirstToSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7365179BEA7300782CB9 /* DSLTransitionFromFirstToSecond.m */; };
-		B5BA7369179BED8900782CB9 /* DSLTransitionFromSecondToFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7368179BED8900782CB9 /* DSLTransitionFromSecondToFirst.m */; };
+		B5BA7369179BED8900782CB9 /* DSLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7368179BED8900782CB9 /* DSLTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,10 +54,8 @@
 		B5BA735C179BE77500782CB9 /* thing03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing03.jpg; sourceTree = "<group>"; };
 		B5BA735D179BE77500782CB9 /* thing04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing04.jpg; sourceTree = "<group>"; };
 		B5BA735E179BE77500782CB9 /* thing05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thing05.jpg; sourceTree = "<group>"; };
-		B5BA7364179BEA7300782CB9 /* DSLTransitionFromFirstToSecond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSLTransitionFromFirstToSecond.h; sourceTree = "<group>"; };
-		B5BA7365179BEA7300782CB9 /* DSLTransitionFromFirstToSecond.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLTransitionFromFirstToSecond.m; sourceTree = "<group>"; };
-		B5BA7367179BED8900782CB9 /* DSLTransitionFromSecondToFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLTransitionFromSecondToFirst.h; sourceTree = "<group>"; };
-		B5BA7368179BED8900782CB9 /* DSLTransitionFromSecondToFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLTransitionFromSecondToFirst.m; sourceTree = "<group>"; };
+		B5BA7367179BED8900782CB9 /* DSLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLTransition.h; sourceTree = "<group>"; };
+		B5BA7368179BED8900782CB9 /* DSLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +107,10 @@
 				B5BA7326179BE1E400782CB9 /* DSLAppDelegate.m */,
 				B5BA734D179BE22F00782CB9 /* DSLFirstViewController.h */,
 				B5BA734E179BE22F00782CB9 /* DSLFirstViewController.m */,
-				B5BA7364179BEA7300782CB9 /* DSLTransitionFromFirstToSecond.h */,
-				B5BA7365179BEA7300782CB9 /* DSLTransitionFromFirstToSecond.m */,
 				B5BA734F179BE24000782CB9 /* DSLSecondViewController.h */,
 				B5BA7350179BE24000782CB9 /* DSLSecondViewController.m */,
-				B5BA7367179BED8900782CB9 /* DSLTransitionFromSecondToFirst.h */,
-				B5BA7368179BED8900782CB9 /* DSLTransitionFromSecondToFirst.m */,
+				B5BA7367179BED8900782CB9 /* DSLTransition.h */,
+				B5BA7368179BED8900782CB9 /* DSLTransition.m */,
 				B5BA7353179BE36000782CB9 /* DSLThing.h */,
 				B5BA7354179BE36000782CB9 /* DSLThing.m */,
 				B5BA7356179BE4B600782CB9 /* DSLThingCell.h */,
@@ -222,14 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BA7369179BED8900782CB9 /* DSLTransitionFromSecondToFirst.m in Sources */,
+				B5BA7369179BED8900782CB9 /* DSLTransition.m in Sources */,
 				B5BA7351179BE2D400782CB9 /* DSLFirstViewController.m in Sources */,
 				B5BA7327179BE1E400782CB9 /* DSLAppDelegate.m in Sources */,
 				B5BA7352179BE2D800782CB9 /* DSLSecondViewController.m in Sources */,
 				B5BA7355179BE37800782CB9 /* DSLThing.m in Sources */,
 				B5BA7358179BE5C100782CB9 /* DSLThingCell.m in Sources */,
 				B5BA7323179BE1E400782CB9 /* main.m in Sources */,
-				B5BA7366179BEA9400782CB9 /* DSLTransitionFromFirstToSecond.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

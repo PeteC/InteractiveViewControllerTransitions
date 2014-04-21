@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 Dative Studios. All rights reserved.
 //
 
+#import "DSLTransition.h"
+
 @class DSLThing;
 
 
-@interface DSLSecondViewController : UIViewController
-
-@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@interface DSLSecondViewController : UIViewController <DSLTransitionDataSource>
 
 @property (nonatomic, strong) DSLThing *thing;
 
